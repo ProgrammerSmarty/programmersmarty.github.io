@@ -1,0 +1,30 @@
+.line {
+    position: absolute;
+    bottom: 0;
+    background: darkslateblue;
+    box-shadow: 0 0 10px darkslateblue 0 0 20px darkslateblue 0 0 30px darkslateblue 0 0 50px darkslateblue;
+    border-radius: 50%;
+    animation: animate 5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100vh;
+    opacity: .5;
+    background: linear-gradient(darkslateblue, transparent);
+}
