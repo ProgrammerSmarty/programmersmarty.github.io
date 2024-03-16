@@ -10,6 +10,7 @@ function lines()
     e.style.width = 2 + sizeW + 'px'
     e.style.left = Math.random() * + innerWidth + 'px';
     e.style.animationDuration = 2 + duration + 's'
+    e.style.zIndex = -100;
 
     setTimeout(() => {
         document.body.removeChild(e)
@@ -18,4 +19,4 @@ function lines()
 
 setInterval(() => {
     lines();
-}, 200);
+}, 100);
