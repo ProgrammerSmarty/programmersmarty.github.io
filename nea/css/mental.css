@@ -1,0 +1,71 @@
+/* CSS Document */
+
+* {
+	font-family: "Ubuntu";
+}
+
+body {
+	margin: 1rem 2rem;
+	background: #6a4b2f;
+}
+
+h1 {
+	font-size: 2.2rem;
+	padding: 0.7rem 1rem;
+	margin: 0;
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+article {
+	margin-top: 4vh;
+	border: 5px solid black;
+}
+
+article h1 {
+	border-bottom: 5px solid black;
+}
+
+article .main {
+	display: flex;
+	background: #34585a;
+	gap: 4vw;
+	justify-content: space-between;
+}
+
+article img {
+	margin: 1rem 1.2rem;
+	background: #151515;
+	border-radius: 8px;
+}
+
+article p {
+	margin: 1rem;
+}
+
+.what-is .main {
+	background: #5b7a2b;
+	padding: 2rem;
+	border-bottom: 5px solid black;
+	gap: 1vw;
+}
+
+.what-is video {
+	border: 5px solid black;
+}
+
+.what-is {
+	background: #4b6a1b;
+}
+
+.what-is .meditation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.what-is .meditation img {
+	height: 100px;
+}
+

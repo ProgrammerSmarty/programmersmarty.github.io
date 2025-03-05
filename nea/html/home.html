@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ReflectMindz - Home</title>
+		<link rel="stylesheet" href="../css/navigation.css">
+		<link rel="stylesheet" href="../css/home.css">
+		
+		<script>
+		function faq(num) {
+			let question = document.getElementById("q" + num)
+			let text = question.querySelector("p")
+			
+			if (text.hasAttribute("id")) {
+				text.removeAttribute("id")
+			}
+			else {
+				text.setAttribute("id", "shown")
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<div class="navigation">
+			<a class="navigation-logo" href="#"><img src="../assets/images/logo.svg" height="80"></a>
+			<a href="mental.html" id="nav1">Mental Health</a>
+			<a href="#" id="nav2">Work Health</a>
+		</div>
+		<section>
+			<article class="a1">
+				<h1 style="background: #4a6b6f;">We do <span style="font-weight: 900;">good</span> work</h1>
+				<div class="main">
+					<p>We are ReflectMindz. A charity willing to help everyone and anyone with their mental health. If you have an issue you wish to talk about, but cannot with others, then get in contact with us promptly. We will be happy to help.<br><br>
+				    Look around on our website if you don't wish to contact us, where you can find informative info-graphics and videos stating what your problem is and how to fix it :D</p>
+					<div class="image-text">
+						<img src="../assets/images/reflectmindz-mission.jpg" height="240">
+						<h3 style="font-family: 'Ubuntu'; background: #000; color:#aaa; padding:0.8rem; margin: 0; border-radius: 0 0 8px 8px ">Be adventurous!</h3>
+					</div>
+				</div>
+			</article>
+			<div class="managing-stress">
+				<div>
+					<p>Mental health can be overwhelming, but trust us when we say that there is a way to combat your issues and anxiety!</p>
+					<button class="more" >Find out more</button>
+				</div>
+				<article class="a2">
+					<h1 style="background: #5b3a2f;">Managing Stress</h1>
+					<p>Stress and anxiety can overwhelm some people. It's a natural phenomenom that happens to the best of us. We will help you get through it!</p>
+				</article>
+			</div>
+		</section>
+		<div>
+			<h1 style="margin-bottom: 2rem;">Faq - Frequently Asked Questions</h1>
+			<div class="faq">
+				<div id="q1">
+					<button onClick="faq(1)">What is mental health?</button>
+					<p>A state of well-being that allows you to cope with the stresses in life</p>
+				</div>
+				<div id="q2">
+					<button onClick="faq(2)">Why do we get mental health issues?</button>
+					<p>As humans, we get these issues all of the time and they can appear anywhere with anything that we do.</p>
+				</div>
+				<div id="q3">
+					<button onClick="faq(3)">How do I fix my mental health issues?</button>
+					<p>Speak to us! Our team of experts will figure out and track down your issues so you can start persuing greater life!</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+/* CSS Document */
+
+body {
+	margin: 1rem 2rem;
+	background: #4a6b2f;
+}
+
+h1 {
+	font-weight: 500;
+	font-family: "Ubuntu";
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+section {
+	margin-top: 4vh;
+	margin-bottom: 8vh;
+}
+
+article {
+	margin-top: 4vh;
+	border: 5px solid black;
+}
+
+.a1 {
+	background: #2a4b1f;
+}
+
+.a2 {
+	background: #4b2a1f;
+}
+
+article .main {
+	display: flex;
+	background: #34585a;
+	gap: 4vw;
+	justify-content: space-between;
+}
+
+p {
+	font-size: 1.8rem;
+	font-family: "Ubuntu", serif;
+}
+
+article p {
+	margin: 1rem;
+}
+
+article p:hover {
+	font-size: 2rem;
+}
+
+article h1 {
+	border-bottom: 5px solid black;
+	padding: 0.5rem 1rem;
+}
+
+article img {
+	border-radius: 8px 8px 0 0;
+}
+
+.image-text {
+	margin: 1rem;
+}
+
+.managing-stress {
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: row;
+	gap: 2vw;
+}
+
+.managing-stress .more {
+	flex: 1;
+	font-family: "Ubuntu", serif;
+	color: white;
+}
+
+.managing-stress article {
+	flex: 4;
+}
+
+.managing-stress div {
+	flex: 1;
+}
+
+button {
+	color: #ccc;
+	background: black;
+	border-style: none;
+	border-radius: 8px;
+	width: 100%;
+	height: 3rem;
+	font-family: 'Ubuntu';
+	font-size: 20px;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+button:hover {
+	background-color: #3a3a6a;
+}
+
+@media screen and (max-width: 1150px) {
+	.managing-stress div {
+		flex: 3;
+	}
+}
+
+
+
+/* Accordion (FAQ) */
+
+.faq {
+	display: flex;
+	flex-direction: row;
+	gap: 1vw;
+	margin-bottom: 8vh;
+}
+
+.faq div {
+	flex: 1;
+}
+
+.faq p {
+	margin-top: 1rem;
+	margin-bottom: 0;
+	display: none;
+}
+
+.faq #shown {
+	display: block;
+}
+
+
+
+
+
+
